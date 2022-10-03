@@ -31,4 +31,11 @@ pip install -r requirements.txt
 dvc init
 ```
 
+### STEP 06- ignore dat file to be tracked by git as it taken care by dvc
+```bash
+echo "*.logs" >> logs/.gitignore
+git rm -r --cached 'data\data.xml'
+git commit -m "stop tracking data\data.xml"
+```
+
 ### STEP 06- commit and push the changes to the remote repository
