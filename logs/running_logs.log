@@ -120,3 +120,95 @@ Connection: close
 
 [2022-10-03 18:55:30,189: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
 
+[2022-10-03 19:12:59,955: INFO: stage_01_get_data]: 
+********************
+[2022-10-03 19:12:59,955: INFO: stage_01_get_data]: >>>>> stage stage 01 get data started <<<<<
+[2022-10-03 19:12:59,961: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-03 19:12:59,961: INFO: common]: created directory at: data
+[2022-10-03 19:12:59,961: INFO: stage_01_get_data]: Download Started
+[2022-10-03 19:13:20,041: INFO: stage_01_get_data]: Download Completed
+[2022-10-03 19:13:20,041: INFO: stage_01_get_data]: Download file is present in : data\data.xml
+[2022-10-03 19:13:20,044: INFO: stage_01_get_data]: Download headers : x-amz-id-2: z0wuQgHJqL3eB9MOQaiphGSMGOgNO7SOyETd5q/e/dTfNPN6HhlsyI+NNSsEWzuLxRr64b9ADX4=
+x-amz-request-id: A9T9S6WCNVVE600D
+Date: Mon, 03 Oct 2022 13:43:02 GMT
+Last-Modified: Mon, 03 Oct 2022 13:13:27 GMT
+ETag: "bf7eaa28ecc8e7af14695bc914c69427-3"
+Content-Disposition: inline
+Accept-Ranges: bytes
+Content-Type: text/xml
+Server: AmazonS3
+Content-Length: 37891850
+Connection: close
+
+
+[2022-10-03 19:13:20,048: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
+
+[2022-10-03 19:14:21,821: INFO: stage_01_get_data]: 
+********************
+[2022-10-03 19:14:21,821: INFO: stage_01_get_data]: >>>>> stage stage 01 get data started <<<<<
+[2022-10-03 19:14:21,831: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-03 19:14:21,831: INFO: common]: created directory at: data
+[2022-10-03 19:14:21,831: INFO: stage_01_get_data]: Download Started
+[2022-10-03 19:14:45,720: INFO: stage_01_get_data]: Download Completed
+[2022-10-03 19:14:45,720: INFO: stage_01_get_data]: Download file is present in : data\data.xml
+[2022-10-03 19:14:45,722: INFO: stage_01_get_data]: Download headers : x-amz-id-2: AsNgQ1qvG0EzVxLX9uZIl3UdV8jPjbmb4QJUaE9gGQA2t83teXPLN1YhMajPEiFbW1yk6LgS68M=
+x-amz-request-id: 0X1ZGTH3WJE9S48K
+Date: Mon, 03 Oct 2022 13:44:24 GMT
+Last-Modified: Mon, 03 Oct 2022 13:13:27 GMT
+ETag: "bf7eaa28ecc8e7af14695bc914c69427-3"
+Content-Disposition: inline
+Accept-Ranges: bytes
+Content-Type: text/xml
+Server: AmazonS3
+Content-Length: 37891850
+Connection: close
+
+
+[2022-10-03 19:14:45,727: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
+
+[2022-10-03 19:15:05,106: INFO: stage_01_get_data]: 
+********************
+[2022-10-03 19:15:05,106: INFO: stage_01_get_data]: >>>>> stage stage 01 get data started <<<<<
+[2022-10-03 19:15:05,107: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-03 19:15:05,107: INFO: common]: created directory at: data
+[2022-10-03 19:15:05,107: INFO: stage_01_get_data]: Download Started
+[2022-10-03 19:15:35,701: INFO: stage_01_get_data]: Download Completed
+[2022-10-03 19:15:35,701: INFO: stage_01_get_data]: Download file is present in : data\data.xml
+[2022-10-03 19:15:35,704: INFO: stage_01_get_data]: Download headers : x-amz-id-2: OsqtlBbl6LVOwvSZ1fu2Q9yq27Mox0ZZUznzu45t2ZmzAIdbroD2W9m9EYCiVen8twl+45Hov1w=
+x-amz-request-id: D4RTKMR5GBGTNS2D
+Date: Mon, 03 Oct 2022 13:45:07 GMT
+Last-Modified: Mon, 03 Oct 2022 13:13:27 GMT
+ETag: "bf7eaa28ecc8e7af14695bc914c69427-3"
+Content-Disposition: inline
+Accept-Ranges: bytes
+Content-Type: text/xml
+Server: AmazonS3
+Content-Length: 37891850
+Connection: close
+
+
+[2022-10-03 19:15:35,707: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
+
+[2022-10-03 19:23:15,115: INFO: stage_01_get_data]: 
+********************
+[2022-10-03 19:23:15,115: INFO: stage_01_get_data]: >>>>> stage stage 01 get data started <<<<<
+[2022-10-03 19:23:15,119: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-03 19:23:15,119: INFO: common]: created directory at: data
+[2022-10-03 19:23:15,119: INFO: stage_01_get_data]: Download Started
+[2022-10-03 19:23:37,499: INFO: stage_01_get_data]: Download Completed
+[2022-10-03 19:23:37,499: INFO: stage_01_get_data]: Download file is present in : data\data.xml
+[2022-10-03 19:23:37,501: INFO: stage_01_get_data]: Download headers : x-amz-id-2: /D4saXAOCtq3um5HJg7Oea9WOqRfByJR6AJNmd2vI5hMeDhicomY8SHUT9m60nthpCKwwWLjqZI=
+x-amz-request-id: 9YFACKESMRTSZX47
+Date: Mon, 03 Oct 2022 13:53:17 GMT
+Last-Modified: Mon, 03 Oct 2022 13:13:27 GMT
+ETag: "bf7eaa28ecc8e7af14695bc914c69427-3"
+Content-Disposition: inline
+Accept-Ranges: bytes
+Content-Type: text/xml
+Server: AmazonS3
+Content-Length: 37891850
+Connection: close
+
+
+[2022-10-03 19:23:37,505: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
+
