@@ -29,11 +29,11 @@ def main(config_path):
     logging.info(f"Download Started")
     filename, headers = req.urlretrieve(source_data_url,local_data_filepath)
     logging.info(f"Download Completed")
-    
+
     logging.info(f"Download file is present in : {filename}")
     logging.info(f"Download headers : {headers}")
     #params = read_yaml(params_path)
-    print(config)
+    #print(config)
     pass
 
 
