@@ -31,6 +31,6 @@ def get_df(path_to_data: str, sep: str="\t" ) -> pd.DataFrame:
         delimiter=sep,
         names=["id","label","text"]
     )
-    logging.info(df)
+    #logging.info(df)
     logging.info(f"the input data frame {path_to_data} size is {df.shape}\n")
     return df

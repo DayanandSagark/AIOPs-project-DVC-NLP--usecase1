@@ -52,7 +52,7 @@ def main(config_path, params_path):
         stop_words = "english",max_features = max_features,ngram_range = (1,ngrams)
     )
     bag_words.fit(train_words)
-    train_words_biary_matrix = bag_words.transfrom(train_words)
+    train_words_binary_matrix = bag_words.transform(train_words)
     # Tfidf Transform
     tfidf = TfidfTransformer(smooth_idf=False)
     tfidf.fit(train_words_binary_matrix)
@@ -63,7 +63,7 @@ def main(config_path, params_path):
     df_test = get_df(test_data_path)
     test_words = np.array(df_test.text.str.lower().values.astype("U")) ## << U1000
 
-    test_words_binary_matrix = bag_of_words.transform(test_words)
+    test_words_binary_matrix = bag_words.transform(test_words)
 
     test_words_tfidf_matrix = tfidf.transform(test_words_binary_matrix)
     save_matrix(df_test, test_words_tfidf_matrix, featurized_test_data_path)

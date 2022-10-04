@@ -1,6 +1,10 @@
 # dvc-project-template
 DVC project template
 
+## Important reference
+* [Bag of Words]
+* [TF-IDF]
+
 ## STEPS -
 
 ### STEP 01- Create a repository by using template repository
