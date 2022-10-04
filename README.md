@@ -46,6 +46,8 @@ git rm -r --cached 'artifacts\features\train.pkl'
 git commit -m "stop tracking artifacts\features\train.pkl"
 git rm -r --cached 'artifacts\features\test.pkl'
 git commit -m "stop tracking artifacts\features\test.pkl"
+git rm -r --cached 'artifacts\model\model.pkl'
+git commit -m "stop tracking artifacts\model\model.pkl"
 dvc repro -f
 dvc dag
 ```
