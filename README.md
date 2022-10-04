@@ -41,6 +41,11 @@ echo "*.logs" >> logs/.gitignore
 git rm -r --cached 'data\data.xml'
 git commit -m "stop tracking data\data.xml"
 git add 'data\.gitignore' dvc.lock
+
+git rm -r --cached 'artifacts\features\train.pkl'
+git commit -m "stop tracking artifacts\features\train.pkl"
+git rm -r --cached 'artifacts\features\test.pkl'
+git commit -m "stop tracking artifacts\features\test.pkl"
 ```
 
 ### STEP 06- commit and push the changes to the remote repository
