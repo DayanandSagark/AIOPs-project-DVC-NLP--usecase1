@@ -4,6 +4,7 @@ DVC project template
 ## Important reference
 * [Bag of Words]
 * [TF-IDF]
+* dvc studio [href = https://studio.iterative.ai/]
 
 ## STEPS -
 
@@ -50,6 +51,9 @@ git rm -r --cached 'artifacts\model\model.pkl'
 git commit -m "stop tracking artifacts\model\model.pkl"
 dvc repro -f
 dvc dag
+
+dvc plots diff
+
 ```
 
 ### STEP 06- commit and push the changes to the remote repository
