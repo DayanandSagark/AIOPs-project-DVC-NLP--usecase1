@@ -212,3 +212,261 @@ Connection: close
 
 [2022-10-03 19:23:37,505: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
 
+[2022-10-04 12:10:12,183: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:10:12,183: INFO: stage_04_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-10-04 12:10:12,189: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:10:12,190: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:10:12,190: INFO: stage_04_train]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-10-04 12:11:23,431: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:11:23,431: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:11:23,432: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:11:23,432: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:11:23,432: ERROR: stage_04_train]: 'MODEL_DIR'
+Traceback (most recent call last):
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 55, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 34, in main
+    model_path = os.path.join(artifacts["ARTIFACTS_DIR"],artifacts["MODEL_DIR"])
+KeyError: 'MODEL_DIR'
+[2022-10-04 12:11:42,941: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:11:42,941: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:11:42,944: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:11:42,944: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:11:43,018: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:11:43,018: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:11:43,018: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:11:43,018: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:14:14,147: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:14:14,147: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:14:14,148: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:14:14,148: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:14:14,208: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:14:14,208: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:14:14,208: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:14:14,208: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:15:38,452: INFO: stage_01_get_data]: 
+********************
+[2022-10-04 12:15:38,452: INFO: stage_01_get_data]: >>>>> stage stage 01 get data started <<<<<
+[2022-10-04 12:15:38,453: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:15:38,453: INFO: common]: created directory at: data
+[2022-10-04 12:15:38,453: INFO: stage_01_get_data]: Download Started
+[2022-10-04 12:15:51,639: INFO: stage_01_get_data]: Download Completed
+[2022-10-04 12:15:51,639: INFO: stage_01_get_data]: Download file is present in : data\data.xml
+[2022-10-04 12:15:51,644: INFO: stage_01_get_data]: Download headers : x-amz-id-2: +IMG0+eaEtpYyeUiYXoHXvuwnyiJGLp32RP/OuTFtLC8YdTCPIKdV+poNqZi5gJ3I05RvJeVFqY=
+x-amz-request-id: PYB9DB13Z8BEZJ8S
+Date: Tue, 04 Oct 2022 06:45:40 GMT
+Last-Modified: Mon, 03 Oct 2022 13:13:27 GMT
+ETag: "bf7eaa28ecc8e7af14695bc914c69427-3"
+Content-Disposition: inline
+Accept-Ranges: bytes
+Content-Type: text/xml
+Server: AmazonS3
+Content-Length: 37891850
+Connection: close
+
+
+[2022-10-04 12:15:51,644: INFO: stage_01_get_data]: >>>>> stage stage 01 get data completed!<<<<<
+
+[2022-10-04 12:15:55,142: INFO: stage_02_prepare]: 
+********************
+[2022-10-04 12:15:55,143: INFO: stage_02_prepare]: >>>>> stage stage 02 prepare data started <<<<<
+[2022-10-04 12:15:55,143: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:15:55,143: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:15:55,143: INFO: common]: created directory at: artifacts\prepared
+[2022-10-04 12:15:59,596: INFO: stage_02_prepare]: >>>>> stage stage 02 prepare data completed!<<<<<
+
+[2022-10-04 12:16:04,995: INFO: stage_03_featurization]: 
+********************
+[2022-10-04 12:16:04,995: INFO: stage_03_featurization]: >>>>> stage stage 03 featurization started <<<<<
+[2022-10-04 12:16:04,996: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:16:04,996: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:16:04,996: INFO: common]: created directory at: artifacts\features
+[2022-10-04 12:16:06,346: INFO: common]: the input data frame artifacts\prepared\train.tsv size is (17536, 3)
+
+[2022-10-04 12:16:22,644: INFO: featurize]: the output matrix saved at: artifacts\features\train.pkl of size: (17536, 2) and datatype: int64
+[2022-10-04 12:16:23,312: INFO: common]: the input data frame artifacts\prepared\test.tsv size is (7464, 3)
+
+[2022-10-04 12:16:25,583: INFO: featurize]: the output matrix saved at: artifacts\features\test.pkl of size: (7464, 2) and datatype: int64
+[2022-10-04 12:16:25,958: INFO: stage_03_featurization]: >>>>> stage stage 03 featurization completed!<<<<<
+
+[2022-10-04 12:20:40,861: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:20:40,861: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:20:40,865: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:20:40,867: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:20:40,931: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:20:40,931: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:20:40,931: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:20:40,931: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:24:56,138: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:24:56,138: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:24:56,148: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:24:56,150: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:24:56,217: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:24:56,217: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:24:56,217: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:24:56,217: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:25:14,577: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:25:14,577: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:25:14,578: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:25:14,584: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:25:14,585: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:25:14,651: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:25:14,651: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:25:14,651: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:25:14,651: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:29:30,722: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:29:30,722: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:29:30,723: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:29:30,723: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:29:30,723: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:29:30,799: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:29:30,799: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:29:30,800: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:29:30,800: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:32:27,779: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:32:27,779: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:32:27,780: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:32:27,780: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:32:27,780: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:32:27,834: INFO: stage_04_train]: input matrix size: (17536, 2)
+[2022-10-04 12:32:27,834: INFO: stage_04_train]: X size: (17536, 0)
+[2022-10-04 12:32:27,834: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:32:27,834: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:34:24,243: INFO: stage_03_featurization]: 
+********************
+[2022-10-04 12:34:24,243: INFO: stage_03_featurization]: >>>>> stage stage 03 featurization started <<<<<
+[2022-10-04 12:34:24,244: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:34:24,244: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:34:24,244: INFO: common]: created directory at: artifacts\features
+[2022-10-04 12:34:24,545: INFO: common]: the input data frame artifacts\prepared\train.tsv size is (17536, 3)
+
+[2022-10-04 12:34:38,408: INFO: featurize]: The output matrix saved at: artifacts\features\train.pkl of the size: (17536, 3002) and data type: float64
+[2022-10-04 12:34:38,521: INFO: common]: the input data frame artifacts\prepared\test.tsv size is (7464, 3)
+
+[2022-10-04 12:34:40,736: INFO: featurize]: The output matrix saved at: artifacts\features\test.pkl of the size: (7464, 3002) and data type: float64
+[2022-10-04 12:34:41,115: INFO: stage_03_featurization]: >>>>> stage stage 03 featurization completed!<<<<<
+
+[2022-10-04 12:34:48,694: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:34:48,694: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:34:48,701: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:34:48,701: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:34:48,701: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:34:48,796: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:34:48,796: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:34:48,796: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:34:48,799: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:43:23,104: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:43:23,104: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:43:23,105: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:43:23,105: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:43:23,105: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:43:23,123: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:43:23,123: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:43:23,123: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:43:23,123: ERROR: stage_04_train]: 'train'
+Traceback (most recent call last):
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 66, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 46, in main
+    seed = params["train"]["seed"]
+KeyError: 'train'
+[2022-10-04 12:43:53,190: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:43:53,190: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:43:53,196: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:43:53,199: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:43:53,199: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:43:53,218: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:43:53,218: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:43:53,218: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:43:53,218: ERROR: stage_04_train]: __init__() got an unexpected keyword argument 'random_sat'
+Traceback (most recent call last):
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 66, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 50, in main
+    model = RandomForestClassifier(
+TypeError: __init__() got an unexpected keyword argument 'random_sat'
+[2022-10-04 12:44:25,937: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:44:25,937: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:44:25,939: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:44:25,939: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:44:25,939: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:44:25,960: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:44:25,960: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:44:25,960: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:44:29,620: ERROR: stage_04_train]: [Errno 13] Permission denied: 'artifacts\\model'
+Traceback (most recent call last):
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 66, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "D:\AIOPs-project-DVC-NLP--usecase1\src\stage_04_train.py", line 54, in main
+    joblib.dump(model, model_dir_path)
+  File "C:\Users\Dayanand\anaconda3\lib\site-packages\joblib\numpy_pickle.py", line 481, in dump
+    with open(filename, 'wb') as f:
+PermissionError: [Errno 13] Permission denied: 'artifacts\\model'
+[2022-10-04 12:47:31,980: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:47:31,980: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:47:31,981: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:47:31,981: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:47:31,981: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:47:31,999: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:47:31,999: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:47:31,999: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:47:35,811: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:48:26,223: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:48:26,223: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:48:26,225: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:48:26,225: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:48:26,225: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:48:26,243: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:48:26,243: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:48:26,243: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:48:30,015: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:50:26,631: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:50:26,631: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:50:26,632: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:50:26,632: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:50:26,632: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:50:26,648: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:50:26,648: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:50:26,648: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:50:31,202: INFO: stage_04_train]: model is trained and saved at: artifacts\model.pkl
+[2022-10-04 12:50:31,202: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
+[2022-10-04 12:53:48,408: INFO: stage_04_train]: 
+********************
+[2022-10-04 12:53:48,408: INFO: stage_04_train]: >>>>> stage stage 04 Training started <<<<<
+[2022-10-04 12:53:48,410: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-10-04 12:53:48,410: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-10-04 12:53:48,410: INFO: common]: created directory at: artifacts\model
+[2022-10-04 12:53:48,425: INFO: stage_04_train]: input matrix size: (17536, 3002)
+[2022-10-04 12:53:48,425: INFO: stage_04_train]: X size: (17536, 3000)
+[2022-10-04 12:53:48,425: INFO: stage_04_train]: y size: (17536,)
+[2022-10-04 12:53:52,358: INFO: stage_04_train]: model is trained and saved at: artifacts\model\model.pkl
+[2022-10-04 12:53:52,358: INFO: stage_04_train]: >>>>> stage stage 04 Training completed!<<<<<
+
