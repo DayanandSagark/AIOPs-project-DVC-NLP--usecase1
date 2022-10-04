@@ -37,8 +37,8 @@ def main(config_path, params_path):
     featurized_data_dir_path = os.path.join(artifacts["ARTIFACTS_DIR"],artifacts["FEATURIZED_DATA"])
     create_directories([featurized_data_dir_path])
     # Train and Test  Featurizrd data paths
-    featurized_train_data_path = os.path.join(prepared_data_dir_path,artifacts["FEATURIZED_TRAIN_DATA"])
-    featurized_test_data_path = os.path.join(prepared_data_dir_path,artifacts["FEATURIZED_TEST_DATA"])
+    featurized_train_data_path = os.path.join(featurized_data_dir_path,artifacts["FEATURIZED_TRAIN_DATA"])
+    featurized_test_data_path = os.path.join(featurized_data_dir_path,artifacts["FEATURIZED_TEST_DATA"])
     #print(train_data_path)
     df_train = get_df(train_data_path)
     #print(df_train)
