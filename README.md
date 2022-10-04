@@ -46,6 +46,8 @@ git rm -r --cached 'artifacts\features\train.pkl'
 git commit -m "stop tracking artifacts\features\train.pkl"
 git rm -r --cached 'artifacts\features\test.pkl'
 git commit -m "stop tracking artifacts\features\test.pkl"
+dvc repro -f
+dvc dag
 ```
 
 ### STEP 06- commit and push the changes to the remote repository

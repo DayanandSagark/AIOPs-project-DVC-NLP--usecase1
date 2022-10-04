@@ -16,6 +16,13 @@ source_download_dir:
   data_dir: data
   data_file: data.xml
 
+plots:
+  PRC: prc.json
+  ROC: roc.json
+
+metrics:
+  SCORES: scores.json
+
 
 local_data_dirs:
   - path_to_local_data_1
