@@ -17,6 +17,9 @@ stages:
     - src/utils/data_mgmt.py
     - data/data.xml
     - configs/config.yaml
+    params:
+    - prepare.seed
+    - prepare.split
     outs:
     - artifacts/prepared/train.tsv
     - artifacts/prepared/test.tsv

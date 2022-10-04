@@ -26,8 +26,8 @@ stages:
       md5: e13a50fe1bfba61c49d2645c7c0eb9d4
       size: 1791
     - path: src/utils/common.py
-      md5: d162961d817182441383bdb0e674e685
-      size: 675
+      md5: 4d03bd1c0e365dc5ba6f10ea320de74e
+      size: 1021
     outs:
     - path: data/data.xml
       md5: a304afb96060aad90176268345e10355
@@ -38,15 +38,22 @@ stages:
     - path: configs/config.yaml
       md5: c08132cd7ab8d91ddc3f33c34b056c79
       size: 1958
+    - path: data/data.xml
+      md5: a304afb96060aad90176268345e10355
+      size: 37891850
     - path: src/stage_02_prepare.py
       md5: 6cd1f408088a7673f157ff5545394908
       size: 2263
     - path: src/utils/common.py
-      md5: d162961d817182441383bdb0e674e685
-      size: 675
+      md5: 4d03bd1c0e365dc5ba6f10ea320de74e
+      size: 1021
     - path: src/utils/data_mgmt.py
       md5: e750b0d472c6ff542c7bfadb3683c9c2
       size: 866
+    params:
+      params.yaml:
+        prepare.seed: 2022
+        prepare.split: 0.3
     outs:
     - path: artifacts/prepared/test.tsv
       md5: 044268ef7ce24243d9a89956f2dcd102
@@ -54,3 +61,35 @@ stages:
     - path: artifacts/prepared/train.tsv
       md5: 4f20b84b7b8680c234888fe91cca8b1f
       size: 16674739
+  featurize:
+    cmd: python src/stage_03_featurization.py  --config=configs/config.yaml --params=params.yaml
+    deps:
+    - path: artifacts/prepared/test.tsv
+      md5: 044268ef7ce24243d9a89956f2dcd102
+      size: 7211580
+    - path: artifacts/prepared/train.tsv
+      md5: 4f20b84b7b8680c234888fe91cca8b1f
+      size: 16674739
+    - path: configs/config.yaml
+      md5: c08132cd7ab8d91ddc3f33c34b056c79
+      size: 1958
+    - path: src/stage_03_featurization.py
+      md5: 4ed6027cadf973e9dc420e328b824486
+      size: 3423
+    - path: src/utils/common.py
+      md5: 4d03bd1c0e365dc5ba6f10ea320de74e
+      size: 1021
+    - path: src/utils/featurize.py
+      md5: 30f9a5402bd7fe857721fdc7b43a0af1
+      size: 533
+    params:
+      params.yaml:
+        featurize.max_features: 3000
+        featurize.ngrams: 2
+    outs:
+    - path: artifacts/features/test.pkl
+      md5: d4a8df08155897badef0035e47932ee7
+      size: 121634
+    - path: artifacts/features/train.pkl
+      md5: dd24fd21c7a9dc30a72e02d814c2d660
+      size: 285186
