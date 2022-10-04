@@ -1,12 +1,14 @@
 import argparse
+import sklearn
 import os
 import shutil
 from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories,get_df
+from src.utils.featurize import save_matrix
 import random
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer, tfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 
 
 STAGE = "stage 03 featurization" ## <<< change stage name 
@@ -37,17 +39,35 @@ def main(config_path, params_path):
     # Train and Test  Featurizrd data paths
     featurized_train_data_path = os.path.join(prepared_data_dir_path,artifacts["FEATURIZED_TRAIN_DATA"])
     featurized_test_data_path = os.path.join(prepared_data_dir_path,artifacts["FEATURIZED_TEST_DATA"])
-
+    #print(train_data_path)
     df_train = get_df(train_data_path)
-
-    train_words = np.array(df_train.text.str.lower().values astype("U"))  ## >>U1000
-
+    #print(df_train)
+    # Extract txt from the data frame
+    train_words = np.array(df_train.text.str.lower().values.astype("U"))  ## >>U1000
+    # Loading params 
     max_features = params["featurize"]["max_features"]
     ngrams = params["featurize"]["ngrams"]
+    # Loading Bag of words
     bag_words = CountVectorizer(
         stop_words = "english",max_features = max_features,ngram_range = (1,ngrams)
     )
+    bag_words.fit(train_words)
+    train_words_biary_matrix = bag_words.transfrom(train_words)
+    # Tfidf Transform
+    tfidf = TfidfTransformer(smooth_idf=False)
+    tfidf.fit(train_words_binary_matrix)
+    train_words_tfidf_matrix = tfidf.transform(train_words_binary_matrix)
+    save_matrix(df_train, train_words_tfidf_matrix, featurized_train_data_path)
+    # Save matrix()
+    # Getting on test data for bow and TDF
+    df_test = get_df(test_data_path)
+    test_words = np.array(df_test.text.str.lower().values.astype("U")) ## << U1000
 
+    test_words_binary_matrix = bag_of_words.transform(test_words)
+
+    test_words_tfidf_matrix = tfidf.transform(test_words_binary_matrix)
+    save_matrix(df_test, test_words_tfidf_matrix, featurized_test_data_path)
+    # Save matrix for test()
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()

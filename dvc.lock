@@ -20,8 +20,8 @@ stages:
     cmd: python src/stage_01_get_data.py  --config=configs/config.yaml
     deps:
     - path: configs/config.yaml
-      md5: e84bec867b23281d78fdfad553b09d13
-      size: 1871
+      md5: c08132cd7ab8d91ddc3f33c34b056c79
+      size: 1958
     - path: src/stage_01_get_data.py
       md5: e13a50fe1bfba61c49d2645c7c0eb9d4
       size: 1791
@@ -36,8 +36,8 @@ stages:
     cmd: python src/stage_02_prepare.py  --config=configs/config.yaml --params=params.yaml
     deps:
     - path: configs/config.yaml
-      md5: e84bec867b23281d78fdfad553b09d13
-      size: 1871
+      md5: c08132cd7ab8d91ddc3f33c34b056c79
+      size: 1958
     - path: src/stage_02_prepare.py
       md5: 6cd1f408088a7673f157ff5545394908
       size: 2263
